@@ -1,0 +1,11 @@
+x = int(input('Masukan jumlah hari : '))
+tahun = int(x/360)
+selisihDariTahun = int(x%360)
+bulan = int(selisihDariTahun/30)
+selisihDariBulan  = int(bulan%7)
+hari = int(selisihDariBulan%7)
+
+print( str(tahun)+' Tahun '+str(bulan)+' Bulan '+str(hari)+' Hari')
+print(selisihDariTahun)
+print(bulan)
+print(selisihDariBulan)

@@ -1,0 +1,177 @@
+<!-- HTML adalah bahasa markup yang digunakan untuk membuat struktur halam website -->
+<!-- HTML bukanlah bahasa pemrograman -->
+<!-- Versi terbaru saat ini adalah versi 5 (HTML 5) -->
+<!-- HTML identic dengan istilah tag, dimana masing2 tag memiliki karakteristik berbeda -->
+
+<!-- Memberi tahu browser, kita menggunakan html 5 -->
+<!DOCTYPE html>
+
+<!-- Root dari semua tag -->
+<html>
+
+    <!-- Mendefinisikan informasi tambahan terhadap browser -->
+    <head>
+        <!-- Menggunakan character set UTF-8, ini yang paling lengkap -->
+        <meta charset="UTF-8" >
+        <!-- Judul halaman -->
+        <title>SUMMARECON</title>
+        <!-- Tempat menulis CSS -->
+        <!-- CSS digunakan untuk mengatur style HTML -->
+        <style>
+            table, th, td{
+                border: 3px solid #c74c41;
+                border-collapse: collapse;
+                padding: 7px 10px;
+            }
+
+        </style>
+    </head>
+
+    <!-- Mendefinisikan apapun yang ingin ditampilkan di halam website -->
+    <body>
+        <!-- HEADER -->
+        <center>
+            <h1>Heading Satu</h1>
+            <h2>Heading Dua</h2>
+            <h3>Heading Tiga</h3>
+            <h4>Heading Empat</h4>
+            <h5>Heading Lima</h5>
+            <h6>Heading Enam</h6>
+        </center>
+
+        <!-- PARAGAPH -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolor quae ducimus qui? Sequi sapiente aliquam velit deleniti error, in, dignissimos harum ab dolores enim placeat quos dicta temporibus odio?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+
+        <!-- ANCHOR -->
+        <!-- relative path / absolute path -->
+        <a href="http://www.asciitable.com/">ASCII</a>
+        <br><br><br>
+
+        <!-- IMAGE -->
+        <!-- src : sumber gambar -->
+        <!-- alt : berisi teks yang akan muncul jika src tidak dapat diakses -->
+        <img width="200" src="https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-1200-80.jpg" alt="Kitten Black">
+        <br>
+
+        <!-- TEXT FORMATING -->
+        <!-- 
+            HTML 4 : bold , italic, underline dihapus
+            HTML : bold, italic, undeline, strong, em, ins
+         -->
+        <b>Ini Bold</b><br>
+        <strong>Ini Strong</strong><br>
+
+        <i>Ini Italic</i><br>
+        <em>Ini Emphasized</em><br>
+
+        <u>Ini Underline</u>
+        <ins>Ini Insert</ins><br>
+
+        <!-- atas -->
+        O <sup>2</sup><br>
+        <!-- bawah -->
+        CO <sub>2</sub><br>
+
+        <mark>Ini Mark</mark><br>
+
+        <!-- LIST -->
+        <!-- Ordered List -->
+         <ol>
+             <li>Pertama</li>
+             <li>Kedua</li>
+             <li>Ketiga</li>
+             <li>Keempat</li>
+             <li>Kelima</li>
+         </ol>
+
+        <!-- Unordered List -->
+        <ul>
+            <li>Pertama</li>
+            <li>Kedua</li>
+            <li>Ketiga</li>
+            <li>Keempat</li>
+            <li>Kelima</li>
+        </ul>
+
+        <!-- TABLE -->
+        <!-- tr : menentukan banyak baris -->
+        <!-- td : menentukan banyak kolom -->
+        <!-- th : Memberikan efek bold dan align center -->
+        <!-- colspan : Menggabungkan kolom -->
+        <!-- rowspan : Menggabungkan baris -->
+        <table>
+            <tr>
+                <th colspan="3">DATA DIRI</th>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <th>TTL</th>
+                <th>Alamat</th>
+            </tr>
+            <tr>
+                <td>Lee Dong Wook</td>
+                <td>Seoul, 6 November 1981</td>
+                <td>Seoul, Korea Selatan</td>
+            </tr>
+            <tr>
+                <td>Lee Seung Gi</td>
+                <td>Seoul, 13 Januari 1987</td>
+                <td>Seoul, Kore Selatan</td>
+            </tr>
+            <tr>
+                <td>John Wick</td>
+                <td>New York, 17 Agustus 1980</td>
+                <td>Jakarta Timur, DKI Jakarta</td>
+            </tr>
+            <tr>
+                <th rowspan="2">TOTAL</th>
+                <td>Barang</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>PPN</td>
+                <td>1000</td>
+            </tr>
+        </table>
+
+        <!-- FORM -->
+        <form >
+            <p>
+                Nama : <input type="text">
+            </p>
+
+            <!-- name pada input radio harus sama -->
+            <p>
+                <input type="radio" name="gender" id="pria"> Pria
+                <input type="radio" name="gender" id="wanita"> Wanita
+            </p>
+
+            <p>
+                <input type="checkbox" name="language" id="html"> HTML
+                <input type="checkbox" name="language" id="css"> CSS
+                <input type="checkbox" name="language" id="python"> PYTHON
+            </p>
+
+            <input type="button" value="FINISH">
+        </form>
+
+
+
+
+
+
+        <!-- 
+            NOTE
+            TAG :  h1, h2, p, a, img
+            ATRRIBUTE : href, src (source), alt(alternative), style
+         -->
+
+        <!-- abaikan -->
+        <div style="margin-top: 900px;" ></div>
+    </body>
+</html>
