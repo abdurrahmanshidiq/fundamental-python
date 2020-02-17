@@ -87,14 +87,14 @@
 
 #####################################################################################
 
-# numbers = input('Masukkan Angka : ')
+numbers = input('Masukkan Angka : ')
 
 
 #Mengubah angka menjadi list integer
 
 #Cara 1
-# listNumbers = [int(i) for i in str(numbers)]
-# print(f'Cara 1 = {listNumbers}')
+listNumbers = [int(i) for i in str(numbers)]
+print(f'Cara 1 = {listNumbers}')
 
 #Cara 2
 # numbers = input('Masukkan Angka : ')

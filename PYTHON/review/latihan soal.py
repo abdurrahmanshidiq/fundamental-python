@@ -24,59 +24,59 @@
 #Soal No.1, Menghilangkan huruf vokal pada kalimat
 
 #REMOVING VOWELS FROM SENTENCE CARA 1
-# def check (x):
-#     return x not in 'aiueo'
+def check (x):
+    return x not in 'aiueo'
 
-# def no_vowel (string):
-#     resFilter = list(filter(check,string))
-#     return ''.join(resFilter)
+def no_vowel (string):
+    resFilter = list(filter(check,string))
+    return ''.join(resFilter)
 
 # print(no_vowel('Today is Friday'))
 
 #REMOVING VOWELS FROM SENTENCE CARA 2
 
-# def check (x):
-#     res = []
-#     for i in x:
-#         if i not in 'aiueo':
-#             res.append(i)
-#     return res
+def check (x):
+    res = []
+    for i in x:
+        if i not in 'aiueo':
+            res.append(i)
+    return res
 
 # #tanpa filter
 # print(''.join(check('this is saturday')))
 
 # #dengan filter
-# word = 'this is saturday'
-# myFilter = ''.join(list(filter(check,word)))
+word = 'this is saturday'
+myFilter = ''.join(list(filter(check,word)))
 # print(myFilter)
 
 ############################################################################################
 
 #Soal No.2, Mencari oulier number pada list integer
 
-# for num in genap:
-#     if num % 2 ==0:
-#         print(num, end = " ")
+for num in genap:
+    if num % 2 ==0:
+        print(num, end = " ")
 
-# genap = [2,12,4,7,8]
-# ganjil = [3,11,7,4,9]
+genap = [2,12,4,7,8]
+ganjil = [3,11,7,4,9]
 
-# def outliers (listNum):
-#     even = []
-#     odd = [] 
+def outliers (listNum):
+    even = []
+    odd = [] 
 
-#     for i in listNum:
-#         if i % 2 == 0:
-#            even.append(i)
-#         else :
-#             odd.append(i)
-#     print (f'even = {even}')
-#     print (f'odd = {odd}')
+    for i in listNum:
+        if i % 2 == 0:
+           even.append(i)
+        else :
+            odd.append(i)
+    print (f'even = {even}')
+    print (f'odd = {odd}')
     
-#     if len(even) > len(odd):
-#         return odd[0]
-#     else:
-#         return even[0]
+    if len(even) > len(odd):
+        return odd[0]
+    else:
+        return even[0]
 
 # print(outliers(genap))
 # print('\n')
@@ -113,8 +113,8 @@ def multiply (lisNum):
     return multiplyRes
 # print(multiply(turntoList(inputAngka)))
 
-#Persistence number
-def persistence (numbers):
+#Perulangan number
+def perulangan (numbers):
     count = 0
     print(numbers)
     while numbers > 9:
@@ -125,7 +125,40 @@ def persistence (numbers):
         count += 1
     return count
 
-print(f'Perulangannya adalah : {persistence(inputAngka)}')
+print(f'Perulangannya adalah : {perulangan(inputAngka)}')
 
+###############################################################################################
 
+#Soal N0.4, Jika pada sebuah kata terdapat huruf yang sama (lebih dari satu), Maka fungsi akan me return FALSE,
+#namun jika pada kata tsb tidak ada huruf yang berulang, maka me retrun TRUE
+#Contoh : Hello = FALSE --> karena huruf 'l' lebih dari satu
+#         Kursi = TRUE --> semua huruf pada kata 'Kursi' tidak ada yang lebih dari satu
 
+inpWord = input('Masukkan Kata : ')
+inpWord = inpWord.lower()
+
+def benarSalah (word):
+    eachOfLetter = []  #[2, 2, 1, 1, 3, 3, 3]
+    boolList = []
+    boolVal = 0
+
+    for i in word:
+        countLetter = word.count(i)
+        eachOfLetter.append(countLetter) 
+        
+    for i in eachOfLetter:
+        if i > 1 :
+            boolList.append(False)
+        else:
+            boolList.append(True)
+
+    if False in boolList:
+        boolVal = False
+    else:
+        boolVal = True
+     
+    return boolVal
+
+print(benarSalah(inpWord))
+
+##############################################################################################

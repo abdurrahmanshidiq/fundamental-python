@@ -22,7 +22,7 @@
 # print(multiplyList(turnToList(numbers)))
 
 ###########################################################################
-inputAngka = int(input('Masukkan Angka : '))
+# inputAngka = int(input('Masukkan Angka : '))
 
 # #Mengubah input(string) menjadi list angka(integer)
 
@@ -59,5 +59,55 @@ def persistence (numbers):
         count += 1
     return count
 
-print(f'Perulangannya adalah : {persistence(inputAngka)}')
+# print(f'Perulangannya adalah : {persistence(inputAngka)}')
 
+##############################################################################################################
+
+# x = 'Hhhellooooaaa'
+# x = x.lower()
+
+# print(x.count('a'))
+
+inpWord = input('Masukkan Kata : ') # Hhelooo
+inpWord = inpWord.lower() #hhelooo
+
+def benarSalah (word):
+    eachOfLetter = []  #[2, 2, 1, 1, 3, 3, 3]
+    boolList = []
+    boolVal = 0
+    for i in word:
+        countLetter = word.count(i)
+        eachOfLetter.append(countLetter) 
+        
+    #################################################################
+    # if 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 in eachOfLetter:
+    #     boolVal = False
+    # else:
+    #     boolVal = True
+    #################################################################
+
+    for i in eachOfLetter:
+        if i >1 :
+            boolList.append(False)
+        else:
+            boolList.append(True)
+
+    if False in boolList:
+        boolVal = False
+    else:
+        boolVal = True
+    # return eachOfLetter 
+    return boolVal
+
+print(benarSalah(inpWord))  
+
+
+#########################################################################################
+
+# inNum = int(input('enter number: '))  
+
+# coolNumbers = [3, 1, 88, 7, 20, 95, 26, 7, 9, 34]
+# if inNum in coolNumbers:
+#    print("26 is in")
+# else:
+#     print(f'{inNum} not in list')
