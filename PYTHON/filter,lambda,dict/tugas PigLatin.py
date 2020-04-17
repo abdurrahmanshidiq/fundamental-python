@@ -23,7 +23,7 @@ else:
 
 
 #######################################################################
-
+#CARA 2
 
 def changeWord (text): 
     if text[0] in ['a','i','u','e','o']:
@@ -33,4 +33,4 @@ def changeWord (text):
 
     print(text)
 
-changeWord('Friday')
+# changeWord('Friday')

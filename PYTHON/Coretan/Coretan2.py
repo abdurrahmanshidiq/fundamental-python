@@ -111,3 +111,22 @@ print(benarSalah(inpWord))
 #    print("26 is in")
 # else:
 #     print(f'{inNum} not in list')
+
+
+# days = ['Sunday', 'Monday', 'Tuesday']
+# # for i in range(len(days)):
+# #     print(f'Loop i : {i}')
+# #     print(f'Loop {i} : {days[i]}')
+
+
+
+num = 23455
+#LIST COMPREHENSION
+lisnum = [int(i) for i in str(num)]
+print(lisnum)
+
+#NORMAL LOOP
+lisnum2 = []
+for i in str(num):
+    lisnum2.append(int(i))
+print(lisnum2)

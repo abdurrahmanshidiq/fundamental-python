@@ -33,7 +33,7 @@ def sentReverse (sentence):
 
     # print(finalRes)
     
-# print(sentReverse('hello my name is bean'))
+print(sentReverse('hello my name is bean'))
 # ###################################################################
 
 # #Soal 2

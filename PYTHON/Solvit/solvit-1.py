@@ -4,3 +4,4 @@ z =int(input("masukan nilai z : "))
 w = pow((x+(y*z))/(x*y),z)
 
 print(w)
+print(0.83**2)

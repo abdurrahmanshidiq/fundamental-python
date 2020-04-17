@@ -2,17 +2,17 @@
 
 
 
-# def noVowels (sentence):
-#     vowels = ['a','i','u','e','o']
-#     for x in sentence:
-#         if x in vowels:
-#             return True
-#         else:
-#             return False
+def noVowels (sentence):
+    vowels = ['a','i','u','e','o']
+    for x in sentence:
+        if x in vowels:
+            return True
+        else:
+            return False
 
-# word = 'Today is Friday'
-# filteredWord = list(filter(noVowels,word))
-# filteredWord = ' '.join(filteredWord)
+word = 'Today is Friday'
+filteredWord = list(filter(noVowels,word))
+filteredWord = ' '.join(filteredWord)
 # print(filteredWord)
 # # finalRes = ' '.join(filter(noVowels,))
 # # print(finalRes)
@@ -53,10 +53,6 @@ myFilter = ''.join(list(filter(check,word)))
 ############################################################################################
 
 #Soal No.2, Mencari oulier number pada list integer
-
-for num in genap:
-    if num % 2 ==0:
-        print(num, end = " ")
 
 genap = [2,12,4,7,8]
 ganjil = [3,11,7,4,9]
@@ -103,7 +99,7 @@ def turntoList (num) :
         angka = int(i)
         listAngka.append(angka)
     return listAngka
-# print(turntoList(inputAngka))
+# print(turntoList(inputAngka)) #[3,9,9]
 
 #Mengkalikan angka di dalam list integer
 def multiply (lisNum):
@@ -111,13 +107,13 @@ def multiply (lisNum):
     for i in lisNum:
         multiplyRes = multiplyRes * i
     return multiplyRes
-# print(multiply(turntoList(inputAngka)))
+# print(multiply(turntoList(inputAngka))) #243
 
 #Perulangan number
 def perulangan (numbers):
     count = 0
     print(numbers)
-    while numbers > 9:
+    while numbers > 9: #jika lebih dari 1 digit akan di loop untuk tahu perulangannya
         lisOfNum = turntoList(str(numbers))
         multOfNum = multiply(lisOfNum)
         print(multOfNum)
@@ -125,7 +121,7 @@ def perulangan (numbers):
         count += 1
     return count
 
-print(f'Perulangannya adalah : {perulangan(inputAngka)}')
+# print(f'Perulangannya adalah : {perulangan(inputAngka)}')
 
 ###############################################################################################
 
@@ -138,7 +134,7 @@ inpWord = input('Masukkan Kata : ')
 inpWord = inpWord.lower()
 
 def benarSalah (word):
-    eachOfLetter = []  #[2, 2, 1, 1, 3, 3, 3]
+    eachOfLetter = []  #[2, 2, 1, 1, 3, 3, 3] 
     boolList = []
     boolVal = 0
 
